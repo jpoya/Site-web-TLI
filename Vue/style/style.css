@@ -17,6 +17,7 @@ header section #menuG{
     float:left;
     width:auto;
     height:auto;
+	
 }
 
 #menuG nav ul {
@@ -51,13 +52,14 @@ header section #menuD{
     float:right;
     width:auto;
     height:auto;
+	padding-right:1%;
 }
 #menuD label{
     width: 2%;
 }
 
 #menuD input[type=text], input[type=password],input[type=submit] {
-    width: 10%;
+    width: auto;
     /*margin-top: 5px;
 	height: 25px;
 	padding: 5px 10px;
