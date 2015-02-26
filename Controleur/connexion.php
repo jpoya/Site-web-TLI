@@ -1,8 +1,20 @@
 <?php
+include("../Modele/connexionUtilisateur.php");
+
+$login=$_POST['login'];
+$MotDePasseClient=$_POST['password'];
+
+
+echo $login;
+
+print_r("Password".$MotDePasseClient) ;
+
+$connexionActive=connexionUtil($login,"ivohhfln");
+
+
 if(isset($_POST['login']) AND isset($_POST['password']))//si il y a bien un login et un mdp
 {
     //verificationFormulaireConnexion();
-    $connexion=connexionUtilisateur();
 
     if ($connexion ==true){
 
@@ -13,5 +25,7 @@ if(isset($_POST['login']) AND isset($_POST['password']))//si il y a bien un logi
         // alert connexion mauvaise
     }
 }
+
+echo "Passer";
 
 ?>

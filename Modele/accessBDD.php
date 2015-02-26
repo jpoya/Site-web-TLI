@@ -1,4 +1,5 @@
 <?php
+
 	//classe d'accès à la base de données
 class accessBDD{
 	function connexionBDD(){
@@ -36,4 +37,5 @@ class accessBDD{
 		return $resultat;
 	}
 }
+
 ?>
